@@ -1,0 +1,6 @@
+﻿  app05.cpp
+C:\Users\seonghun.han\Desktop\K-Soft\1day\day1\day1\app05.cpp(8,10): error C3861: 'inhaLen': 식별자를 찾을 수 없습니다.
+C:\Users\seonghun.han\Desktop\K-Soft\1day\day1\day1\app05.cpp(9,10): error C3861: 'inhaLen': 식별자를 찾을 수 없습니다.
+C:\Users\seonghun.han\Desktop\K-Soft\1day\day1\day1\app05.cpp(12,18): error C2397: 'int'에서 'char'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\seonghun.han\Desktop\K-Soft\1day\day1\day1\app05.cpp(15,9): error C2109: 첨자는 배열 또는 포인터 형식을 사용해야 합니다.
+C:\Users\seonghun.han\Desktop\K-Soft\1day\day1\day1\app05.cpp(19,9): error C2109: 첨자는 배열 또는 포인터 형식을 사용해야 합니다.
