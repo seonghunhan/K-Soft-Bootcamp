@@ -2,60 +2,74 @@
 #include <string> // C++ 문자열 
 using namespace std;
 
-//int main() {
-//	//int a = 10; 
-//	//int* pa = &a;  //포인터는 어떤 변수의 주소값을 가르킨다라고 생각
-//
-//
-//	//cout << &a << " "<< pa << '\n';
-//
-//	//cout << a << " " << *pa << '\n';  // 포인터변수에 *을 붙이면 그 메모리의 값을 꺼내와서 표현한다
-//
-//	//*pa = 5; // 이렇게 포인터로 그 메모리주소의 값을 바꾸는것도 가능
-//	//pa = 199; // 포인터 변수에 정수 선언 불가능
-//
-//	//cout << &a << " " << pa << '\n';
-//
-//	//cout << a << " " << *pa << '\n';
-//
-//	//int arr[] = { 11, 9, 77 };
-//
-//	//cout << arr[2] << '\n';
-//	//arr[1] = -11;
-//	//cout << arr[1] << '\n';
-//
-//
-//	// 위와 달리 new를 사용해서 동적 메모리 할당하는 예제
-//	int size = 0;
-//	double average = 0.0;
-//	int sum = 0;
-//	cin >> size; // 몇 명이 오셨어요?
-//	int* p = new int[size]; //new를 사용하면 동적 메모리 할당 가능
-//
-//	cin >> *(p + 0);
-//	cin >> *(p + 1);
-//
-//	//for (int i = 0; i < size; i++)
-//	//	cin >> *(p + i);
-//
-//	for (int i = 0; i < size; i++) {
-//		cout << *(p + i) << " ";
-//		// sum = sum + *(p + i);
-//	}
-//
-//	// size는 정수형태로 출력 그로 인하여 소수점이 잘리는 것을 막기 위해 size변수를 실수형으로 캐스팅
-//	// sum도 프로모션으로 실수로 동작 이게 C++ 형변환
-//	// cout << (sum / static_cast<double>(size)) << '\n';
-//
-//	delete[] p; //new로 선언하면 메모리 효율을위해 delete를 해줘야함
-//	
-//
-//
-//	
-//
-//
-//	return 0;
-//}
+int main() {
+	//int a = 10; 
+	//int* pa = &a;  //포인터는 어떤 변수의 주소값을 가르킨다라고 생각
+
+
+	//cout << &a << " "<< pa << '\n';
+
+	//cout << a << " " << *pa << '\n';  // 포인터변수에 *을 붙이면 그 메모리의 값을 꺼내와서 표현한다
+
+	//*pa = 5; // 이렇게 포인터로 그 메모리주소의 값을 바꾸는것도 가능
+	////pa = 199; // 포인터 변수에 정수 선언 불가능
+
+	//cout << &a << " " << pa << '\n';
+
+	//cout << a << " " << *pa << '\n';
+
+
+	// 정적 할당
+	int arr[] = { 11, 9, 77 };
+
+	cout << arr[2] << '\n';
+	arr[1] = -11;
+	cout << arr[1] << '\n';
+
+
+	// 위와 달리 new를 사용해서 동적 메모리 할당하는 예제
+	//int size = 0;
+	//double average = 0.0;
+	//int sum = 0;
+	//cin >> size; // 몇 명이 오셨어요?
+	//int* p = new int[size]; //new를 사용하면 동적 메모리 할당 가능
+
+	//cin >> *(p + 0);
+	//cin >> *(p + 1);
+
+	//for (int i = 0; i < size; i++)
+	//	cin >> *(p + i);
+
+	//for (int i = 0; i < size; i++) {
+	//	cout << *(p + i) << " ";
+	//	sum = sum + *(p + i);
+	//}
+
+	int size = 0;
+
+	cin >> size; //(몇 명이 오셨어요 ? )
+		int* p = new int[size]; //(new를 사용하면 동적 메모리 할당 가능)
+
+	for (int i = 0; i < size; i++)
+		cin >> *(p + i);
+
+	for (int i = 0; i < size; i++) {
+		cout << *(p + i) << " ";
+	}
+
+	// size는 정수형태로 출력 그로 인하여 소수점이 잘리는 것을 막기 위해 size변수를 실수형으로 캐스팅
+	// sum도 프로모션으로 실수로 동작 이게 C++ 형변환
+	// cout << (sum / static_cast<double>(size)) << '\n';
+
+	//delete[] p; //new로 선언하면 메모리 효율을위해 delete를 해줘야함
+	
+
+
+	
+
+
+	return 0;
+}
 
 
 

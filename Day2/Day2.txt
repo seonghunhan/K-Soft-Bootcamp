@@ -14,3 +14,5 @@
 2. 클래스들의 관계
 - 실무에서는 public(+)만 있고 private(-)나 protect(#)는 거의 없다.(자바에서는 public만 있다.)
 - public은 누구나 접근가능, protect는 자식클래스 한해서 접근가능, private는 누구든 접근불가능
+
+2.1 오버라이딩
