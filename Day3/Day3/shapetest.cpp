@@ -1,7 +1,7 @@
 //#include "circle.h"
 #include "sphere.h"
 int main() {
-	Circle* ptr[3];
+	//Circle* ptr[3];
 
 	//*ptr = new Sphere(5.0); // upcasting
 	//*(ptr + 1) = new Circle(10.0);

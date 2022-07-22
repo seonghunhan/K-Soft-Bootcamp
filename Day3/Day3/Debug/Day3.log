@@ -1,3 +1,2 @@
 ﻿  shapetest.cpp
-C:\Users\seonghun.han\Desktop\K-Soft\Day3\Day3\shapetest.cpp(4,10): warning C4101: 'ptr' :참조되지 않은 지역 변수입니다.
   Day3.vcxproj -> C:\Users\seonghun.han\Desktop\K-Soft\Day3\Debug\Day3.exe
