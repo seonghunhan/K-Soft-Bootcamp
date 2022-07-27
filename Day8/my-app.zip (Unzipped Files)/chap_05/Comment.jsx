@@ -2,12 +2,12 @@ import React from "react";
 
 const styles = {
     wrapper: {
-        margin: 8,
-        padding: 8,
+        margin: 10,
+        padding: 10,
         display: "flex",
         flexDirection: "row",
-        border: "1px solid grey",
-        borderRadius: 16,
+        border: "2px dashed grey",
+        borderRadius: 20,
     },
     imageContainer: {},
     image: {
@@ -32,22 +32,18 @@ const styles = {
     },
 };
 
-function Comment(props) {
-    return (
+function Comment(props){
+    return(
         <div style={styles.wrapper}>
             <div style={styles.imageContainer}>
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
-                    style={styles.image}
-                />
+                <img src="https://placedog.net/30/20" style={styles.image} />
             </div>
 
             <div style={styles.contentContainer}>
                 <span style={styles.nameText}>{props.name}</span>
                 <span style={styles.commentText}>{props.comment}</span>
-            </div>
+            </div>      
         </div>
     );
 }
-
 export default Comment;

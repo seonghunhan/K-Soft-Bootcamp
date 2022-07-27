@@ -5,7 +5,8 @@ import reportWebVitals from './reportWebVitals';
 // import App from './App';
 // import Library from './chap_03/Library';
 // import Clock from './chap_04/Clock';
-import CommentList from './chap_05/CommentList';
+// import CommentList from './chap_05/CommentList';
+import NotificationList from './chap_06/Notification.List';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -13,7 +14,7 @@ setInterval(
   ()=>{
     root.render(
       <React.StrictMode>
-        <CommentList />
+        <NotificationList />
       </React.StrictMode>
     );
   },
